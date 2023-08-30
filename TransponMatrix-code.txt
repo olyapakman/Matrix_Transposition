@@ -1,0 +1,29 @@
+
+static int[][] multiply (int array[int x][int y]) {
+	x = array.length;
+	y = array[0].length;
+	int [][] arrayTr = new int[y][x];
+
+	for (int i = 0; i < x; i++) {
+		for (int j = 0; j < y; j++) {
+		arrayTr[i][j] = array[j][i];
+		}
+	}
+	return arrayTr;
+}
+public static void main (String[] args) {
+int array[][] = {
+{3, 4, 2},
+{5, 8, 1},
+{7, 6, 9}
+}
+multiply(array);
+
+for (int m = 0; m < array.length; m++) {  //идём по строкам
+            for (int n = 0; n < array[0].length; n++) {//идём по столбцам
+                System.out.print(" " + array[m][n] + " "); //вывод элемента
+            }
+            System.out.println();//перенос строки ради визуального сохранения табличной формы
+        }
+		
+}
